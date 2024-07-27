@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+  
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+ul li:hover{
+    text-decoration: underline;
+}
+#nav > i {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Main Text */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height:max-content;
+  width: 100%;
+
+}
+/* Left Section */
+.left {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+  width: 75%;
+  height: 100%;
+}
+.left > h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+}
+.left p{
+    line-height: 1.5rem;
+}
+.right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+/* Right bottom element */
+.con{
+    padding: 10px;
+    border-top:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.con .active{
+    display: none;
+}
+
+.con:hover .active{
+    
+    display: inline;
+}
+.con:hover p{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* bottom image */
+.bottomimg{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+.bottomimg img{
+    object-fit: cover;
+    object-position: 0 10%;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:800px){
+     .left  h1{
+        font-size: 2.9rem;
+     }
+}
+@media (max-width:600px){
+
+    .left  h1{
+        font-size: 2.4rem;
+     }
+    .container{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        padding-left:5%;
+        margin-bottom: 20px;
+    }
+    .left h1{
+        line-height: 2.4rem;
+    }
+    .right{
+        width: 80%;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        align-self: center;
+    }
+
+}
+@media (max-width:385px){
+    .left h1{
+        font-size: 2rem;
+    }
+    .left p{
+        font-size: 0.7rem;
+    }
+}
