@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Project Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #212529;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin-top: 0.5rem;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Frontend Project Showcase</h1>
+    <div class="grid">
+      <!-- Card 1 -->
+      <a href="./Grid/project1/index.html" class="card" >
+        <img src="./Grid/Model.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Simple Grid Base layout</p>
+      </a>
+      <!-- Card 2 -->
+      <a href="./shop-jacket/index.html" class="card" >
+        <img src="./Grid/Images/Screenshot 2024-11-28 180123.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Grid based Layout.</p>
+      </a>
+      <!-- Card 3 -->
+      <a href="./Project-1/index.html" class="card" >
+        <img src="./Project-1/premier.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Grid based Layout.</p>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
